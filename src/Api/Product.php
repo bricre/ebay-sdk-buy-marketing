@@ -2,10 +2,9 @@
 
 namespace Ebay\Buy\Marketing\Api;
 
-use Ebay\Buy\Marketing\Model\BestSellingProductResponse as BestSellingProductResponse;
-use OpenAPI\Runtime\AbstractAPI as AbstractAPI;
+use Ebay\Buy\Marketing\Model\BestSellingProductResponse;
 
-class MerchandisedProduct extends AbstractAPI
+class Product extends AbstractAPI
 {
     /**
      * This method returns an array of products based on the category and metric
@@ -53,10 +52,13 @@ class MerchandisedProduct extends AbstractAPI
      */
     public function gets(array $queries = []): BestSellingProductResponse
     {
-        return $this->client->request('getMerchandisedProducts', 'GET', 'merchandised_product',
-            [
-                'query' => $queries,
-            ]
+        return $this->request(
+        'getMerchandisedProducts',
+        'GET',
+        'merchandised_product',
+        null,
+        $queries,
+        []
         );
     }
 }

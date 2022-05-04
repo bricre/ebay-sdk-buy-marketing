@@ -2,7 +2,7 @@
 
 namespace Ebay\Buy\Marketing\Model;
 
-use OpenAPI\Runtime\AbstractModel as AbstractModel;
+use OpenAPI\Runtime\AbstractModel;
 
 /**
  * Type the defines the details of an image, such as size and URL. Currently only

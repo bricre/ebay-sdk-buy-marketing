@@ -2,7 +2,7 @@
 
 namespace Ebay\Buy\Marketing\Model;
 
-use OpenAPI\Runtime\AbstractModel as AbstractModel;
+use OpenAPI\Runtime\AbstractModel;
 
 /**
  * The type that defines the fields for product information, including price,
@@ -62,4 +62,11 @@ class MerchandisedProduct extends AbstractModel
      * @var int
      */
     public $reviewCount = null;
+
+    /**
+     * The title of the product.
+     *
+     * @var string
+     */
+    public $title = null;
 }

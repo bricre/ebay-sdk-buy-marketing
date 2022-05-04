@@ -2,7 +2,7 @@
 
 namespace Ebay\Buy\Marketing\Model;
 
-use OpenAPI\Runtime\AbstractModel as AbstractModel;
+use OpenAPI\Runtime\AbstractModel;
 
 /**
  * An array of name/value pairs that provide details regarding the error.

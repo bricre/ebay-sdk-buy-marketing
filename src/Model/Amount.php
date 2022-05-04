@@ -2,7 +2,7 @@
 
 namespace Ebay\Buy\Marketing\Model;
 
-use OpenAPI\Runtime\AbstractModel as AbstractModel;
+use OpenAPI\Runtime\AbstractModel;
 
 /**
  * This type defines the monetary value of an amount and the currency used.

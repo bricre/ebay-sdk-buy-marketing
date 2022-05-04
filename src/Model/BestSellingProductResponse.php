@@ -2,7 +2,7 @@
 
 namespace Ebay\Buy\Marketing\Model;
 
-use OpenAPI\Runtime\AbstractModel as AbstractModel;
+use OpenAPI\Runtime\AbstractModel;
 
 /**
  * The type that defines the fields for the best selling product information.

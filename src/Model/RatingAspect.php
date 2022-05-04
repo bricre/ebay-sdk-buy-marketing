@@ -2,7 +2,7 @@
 
 namespace Ebay\Buy\Marketing\Model;
 
-use OpenAPI\Runtime\AbstractModel as AbstractModel;
+use OpenAPI\Runtime\AbstractModel;
 
 /**
  * The type that defines the fields for the product aspect ratings.
@@ -15,6 +15,14 @@ class RatingAspect extends AbstractModel
      * @var int
      */
     public $count = null;
+
+    /**
+     * The name of the rating aspect. Camping tent examples: Is it lightweight? or Is
+     * it easy to set up?
+     *
+     * @var string
+     */
+    public $description = null;
 
     /**
      * The answer or value of the rating aspect. Camping tent examples: Lightweight or
