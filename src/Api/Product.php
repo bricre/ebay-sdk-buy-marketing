@@ -3,6 +3,7 @@
 namespace Ebay\Buy\Marketing\Api;
 
 use Ebay\Buy\Marketing\Model\BestSellingProductResponse;
+use OpenAPI\Runtime\UnexpectedResponse;
 
 class Product extends AbstractAPI
 {
@@ -48,9 +49,9 @@ class Product extends AbstractAPI
      *                       is <code> BEST_SELLING</code>. <br /><br /><b> Default: </b>BEST_SELLING <br />
      *                       <b> Maximum: </b> 1 <br /> <b> Required: </b> 1
      *
-     * @return BestSellingProductResponse
+     * @return BestSellingProductResponse|UnexpectedResponse
      */
-    public function gets(array $queries = []): BestSellingProductResponse
+    public function gets(array $queries = [])
     {
         return $this->request(
         'getMerchandisedProducts',
